@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Men Collection</title>
+    <script src="cart.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        .card button {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+
+        #gallery h2 {
+            font-size: 2.5rem;
+            color: black;
+            text-align: center;
+            justify-content: center;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="window.location.href='home.html'"
+        style="margin:20px; padding:10px 20px; border:none; border-radius:8px; background:#000; color:#fff; cursor:pointer; margin-top: 20px; position: fixed;">
+        ⬅ Back to Home
+    </button>
+
+    <section id="gallery">
+        <h2>Traditional Wear</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/men1.jpg" alt="">
+                <p>Festival wear</p>
+                <p>Price: 2999/-</p>
+                <button onclick="addToCart('Formal', 2999)">Add to Cart</button>
+                <!-- <button onclick="toggleCart()">Open Cart</button> -->
+
+            </div>
+            <div class="card">
+                <img src="./images/men11.jpg" alt="">
+                <p>Festival Wear</p>
+                <p>Price: 1999/-</p>
+                <button onclick="addToCart('Formal', 1999)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/men3.jpg" alt="">
+                <p>Festival Wear </p>
+                <p>Price: 2499/-</p>
+                <button onclick="addToCart('Festival wear', 2499)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/men4.jpg" alt="">
+                <p>Festival wear</p>
+                <p>Price: 2999/-</p>
+                <button onclick="addToCart('Formal', 2999)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <h2>Casual Wear</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/men5.jpg" alt="">
+                <p> Night wear</p>
+                <p>Price: 1299/-</p>
+                <button onclick="addToCart('Night wear', 1299)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/men6.jpg" alt="">
+                <p> Night wear</p>
+                <p>Price: 499/-</p>
+                <button onclick="addToCart('Night wear', 499)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/men7.webp" alt="">
+                <p> Night wear</p>
+                <p>Price: 1499/-</p>
+                <button onclick="addToCart('Nigth wear', 1499)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/men8.jpg" alt="">
+                <p> Night wear</p>
+                <p>Price: 999/-</p>
+                <button onclick="addToCart('Night wear', 999)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <h2>Formal Wear</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/men9.jpg" alt="">
+                <p> Formal dress</p>
+                <p>Price: 2999/-</p>
+                <button onclick="addToCart('Formal', 2999)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/men10.jpg" alt="">
+                <p> Formal dress</p>
+                <p>Price: 1999/-</p>
+                <button onclick="addToCart('Formal', 1999)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/men2.jpg" alt="">
+                <p> Formal dress</p>
+                <p>Price: 1299/-</p>
+                <button onclick="addToCart('Formal', 1299)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/men12.jpg" alt="">
+                <p> Formal dress</p>
+                <p>Price: 3999/-</p>
+                <button onclick="addToCart('Formal', 3999)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

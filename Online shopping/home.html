@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendHive Fashions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="cart.js"></script>
+
+</head>
+
+<body>
+    <div class="name">
+        <h1>TrendHive</h1>
+        <marquee behavior="scroll" direction="right" scrollamount="10s">
+            <h3>Discover the latest styles at prices you’ll love.!</h3>
+        </marquee>
+        <h2></h2>
+    </div>
+    <nav>
+        <div class="logo">MyBrand</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop_now">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="#contact_us">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="home" id="home">
+        <div>
+            <h4>Shop Now</h4>
+            <h1>Trendy Fashion</h1>
+            <h4>Affordable styles for everyone, shop now!</h4>
+            <button type="button">Explore</button>
+        </div>
+    </div>
+
+    <!-- about -->
+    <section id="about">
+        <div class="container">
+            <div class="box1">
+                <h1>Trendy Fashions</h1>
+            </div>
+            <div class="box2">
+                <h1>About Us</h1>
+                <p>At TrendHive, we bring you the perfect blend of style, comfort, and affordability. Our mission is to
+                    make fashion accessible to everyone with collections that keep up with the latest trends, all at
+                    prices
+                    you’ll love.</p>
+                <p>✨ Trendy Styles: Explore the latest fashion in clothing, footwear, and accessories.</p>
+                <p>✨ Everyday Comfort: Essentials that fit every mood and occasion.</p>
+                <p>✨ Fresh Arrivals: Collections updated regularly so you never miss out on what’s new.</p>
+                <p>Our store is designed to give you a seamless shopping experience—from browsing to checkout. Whether
+                    you’re dressing for casual days, special events, or just looking for everyday wear, we’ve got you
+                    covered.</p>
+            </div>
+        </div>
+
+    </section>\
+    <!-- products -->
+    <section id="shop_now">
+        <h1>Explore</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/men fashion.jpg" alt="Product 1">
+                <h2>Explore Men Collection</h2>
+                <button onclick="button"><a href="./men-collection.html">Shop Now</a></button>
+            </div>
+            <div class="card">
+                <img src="./images/women fashion.png" alt="Product 2">
+                <h2>Explore Women Collection</h2>
+                <button onclick="button"><a href="./women-collection.html">Shop Now</a></button>
+            </div>
+            <div class="card">
+                <img src="./images/child fashion.avif" alt="Product 3">
+                <h2>Explore Children Collection</h2>
+                <button onclick="button"><a href="./children.html">Shop Now</a></button>
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+
+            <div class="service-box">
+                <span class="icon">🚚</span>
+                <h3>Fast Delivery</h3>
+                <p>Get your orders delivered quickly and safely right to your doorstep.</p>
+            </div>
+
+            <div class="service-box">
+                <span class="icon">🔄</span>
+                <h3>Easy Returns</h3>
+                <p>Hassle-free 7-day return & exchange policy for your convenience.</p>
+            </div>
+
+            <div class="service-box">
+                <span class="icon">🔒</span>
+                <h3>Secure Payments</h3>
+                <p>Shop with confidence using multiple secure payment options.</p>
+            </div>
+
+            <div class="service-box">
+                <span class="icon">📞</span>
+                <h3>24/7 Support</h3>
+                <p>Our customer care team is always available to assist you.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- image gallery -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/image1.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/image3.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/image5.avif" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/image7.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/image2.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/image4.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/image6.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/image8.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- contact Us -->
+    <section class="contact" id="contact_us">
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+            <!-- Contact Details -->
+            <div class="contact-info">
+                <h1>TrendHive Fashions</h1>
+                <h3>Affordable and trendy clothing for everyone.</h3>
+                <h3>Grab the latest styles under @999!</h3>
+                <h2>FOLLOW US ON</h2>
+                <div class="icon-container">
+                    <img src="./images/instagram.jpg" alt="" class="icon">
+                    <img src="./images/twitter.png" alt="" class="icon">
+                    <img src="./images/facebook.png" alt="" class="icon">
+
+                    <!-- <a href="./facebook.png"><i class="icon"></i></a>
+                    <a href="./instagram.jpg"><i class="icon"></i></a>
+                    <a href="./twitter.png"><i class="icon"></i></a> -->
+                </div>
+
+                <p>📧 Email: support@trendhivefashions.com</p>
+            </div>
+
+
+            <!-- Contact Form -->
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

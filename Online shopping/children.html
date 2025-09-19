@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Children Collection</title>
+    <script src="cart.js"></script>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        .card button {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+
+        #gallery h2 {
+            font-size: 2.5rem;
+            color: black;
+            text-align: center;
+            justify-content: center;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="window.location.href='home.html'"
+        style="margin:20px; padding:10px 20px; border:none; border-radius:8px; background:#000; color:#fff; cursor:pointer; margin-top: 20px; position: fixed;">
+        ⬅ Back to Home
+    </button>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/child1.jpg" alt="">
+                <p>Pink Frock</p>
+                <p>Price: 699/-</p>
+                <button onclick="addToCart('Pink Frock', 699)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/child2.jpg" alt="">
+                <p>Anarkali Dress</p>
+                <p>Price: 1299/-</p>
+                <button onclick="addToCart('Anarkali Dress', 1299)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/child3.jpg" alt="">
+                <p>Blue Frock</p>
+                <p>Price: 1499/-</p>
+                <button onclick="addToCart('Blue Frock', 1499)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/child4.jpg" alt="">
+                <p>Casual Wear</p>
+                <p>Price: 799/-</p>
+                <button onclick="addToCart('Casual Wear', 799)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+       
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/child5.jpg" alt="">
+                <p>Western wear</p>
+                <p>Price: 999/-</p>
+                <button onclick="addToCart('Western wear', 999)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/child6.jpg" alt="">
+                <p>Zeans and Top</p>
+                <p>Price: 1299/-</p>
+                <button onclick="addToCart('Zeans and Top', 1299)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/child7.jpg" alt="">
+                <p>Zeans Shirt</p>
+                <p>Price: 1999/-</p>
+                <button onclick="addToCart('Zeans Shirt', 1999)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/child8.jpg" alt="">
+                <p>shirt</p>
+                <p>Price: 499/-</p>
+                <button onclick="addToCart('shirt', 499)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+       
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/child9.jpg" alt="">
+                <p>Tshirt</p>
+                <p>Price: 399/-</p>
+                <button onclick="addToCart('Tshirt', 399)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/child10.jpg" alt="">
+                <p> Full set </p>
+                <p>Price: 799/-</p>
+                <button onclick="addToCart('Full Set', 799)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/child11.jpg" alt="">
+                <p>Casual Wear</p>
+                <p>Price: 599/-</p>
+                <button onclick="addToCart('Casual Wear', 599)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./images/child12.jpg" alt="">
+                <p>Traditional Wear</p>
+                <p>Price: 1599/-</p>
+                <button onclick="addToCart('Traditional Wear', 1599)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
